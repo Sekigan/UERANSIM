@@ -1,3 +1,36 @@
+# Comandos Iniciales
+
+```sh
+sudo apt update
+sudo apt upgrade
+
+sudo apt install make
+sudo apt install gcc
+sudo apt install g++
+sudo apt install libsctp-dev lksctp-tools
+sudo apt install iproute2
+sudo snap install cmake --classic
+
+```
+
+## Building
+```sh
+cd ~/UERANSIM
+make
+```
+
+## Run from /UERANSIM#
+``` sh
+#- First Terminal
+
+sudo ./build/nr-gnb -c magma/magma-gnb.yaml
+
+#- Second Terminal
+sudo ./build/nr-ue -c magma/magma-ue.yaml
+```
+
+
+
 <p align="center">
   <a href="https://github.com/aligungr/UERANSIM"><img src="/.github/logo.png" width="75" title="UERANSIM"></a>
 </p>
